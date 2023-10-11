@@ -17,22 +17,10 @@ body {
   max-width: 1180px;
   padding: 0 15px;
   margin: 0 auto;
-
-  @media (max-width: 1199px) {
-    max-width: 100%;
-  }
 }
 
 .section {
   padding-bottom: 153px;
-
-  @media (max-width: 1199px) {
-    padding-bottom: 120px;
-  }
-
-  @media (max-width: 767px) {
-    padding-bottom: 80px;
-  }
 }
 
 .section__title {
@@ -40,24 +28,10 @@ body {
   font-size: 18px;
   letter-spacing: -0.54px;
   text-transform: uppercase;
-
-  @media (max-width: 767px) {
-    margin-bottom: 20px;
-    font-size: 14px;
-    letter-spacing: -0.42px;
-  }
 }
 
 .section__item {
   padding-bottom: 90px;
-
-  @media (max-width: 767px) {
-    padding-bottom: 80px;
-  }
-
-  @media (max-width: 1199px) {
-    padding-bottom: 49px;
-  }
 }
 
 .section__description {
@@ -65,29 +39,12 @@ body {
   font-size: 30px;
   line-height: normal;
   letter-spacing: -0.9px;
-
-  @media (max-width: 1199px) {
-    margin-bottom: 10px;
-    font-size: 25px;
-    letter-spacing: -0.75px;
-  }
-
-  @media (max-width: 767px) {
-    margin-bottom: 10px;
-    font-size: 18px; 
-    letter-spacing: -0.54px;
-  }
 }
 
 .section__item-image {
   margin-bottom: 20px;
   max-width: 1150px;
   overflow: hidden;
-
-  @media (max-width: 1199px) {
-    margin-bottom: 15px;
-    width: 100%;
-  }
 }
 
 .section__link {
@@ -98,11 +55,6 @@ body {
   line-height: normal;
   color: #ad1818;
   transition: transform 0.5s ease-in-out;
-
-  @media (max-width: 767px) {
-    font-size: 16px;
-    letter-spacing: -0.48px;
-  }
 }
 
 .section__link-btn {
@@ -115,16 +67,6 @@ body {
   letter-spacing: -0.1px;
   color: #fff;
   transition: transform 0.5s ease-in-out;
-
-  @media (max-width: 1199px) {
-    letter-spacing: -0.6px;
-  }
-
-  @media (max-width: 767px) {
-    padding: 15.21px 31.41px;
-    font-size: 16px;
-    letter-spacing: -0.46px;
-  }
 }
 
 .section__link-btn:hover,
@@ -200,18 +142,6 @@ body {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1.8px;
-
-  @media (max-width: 1199px) {
-    font-size: 50px;
-    letter-spacing: -1.5px;
-  }
-
-  @media (max-width: 767px) {
-    margin-bottom: 25px;
-    font-size: 30px;
-    line-height: 0.95;
-    letter-spacing: -0.9px;
-  }
 }
 
 .hero__description {
@@ -243,16 +173,6 @@ body {
   line-height: normal;
   color: #fff;
   z-index: 9;
-
-  @media (max-width: 767px) {
-    bottom: 15px;
-    left: 15px;
-    margin-bottom: 25px;
-    max-width: 250px;
-    font-size: 16px;
-    line-height: normal;
-    letter-spacing: -0.48px;
-  }
 }
 
 /* HER0===============/ */
@@ -265,18 +185,6 @@ body {
   font-size: 45px;
   line-height: 1.355;
   letter-spacing: -1.35px;
-
-  @media (max-width: 1199px) {
-    max-width: 690px;
-    font-size: 35px;
-    letter-spacing: -1.05px;
-  }
-
-  @media (max-width: 767px) {
-    max-width: 100%;
-    font-size: 22px;
-    letter-spacing: -0.66px;
-  }
 }
 
 /* ABOUT==============/ */
@@ -296,12 +204,6 @@ body {
   letter-spacing: -0.9px;
   line-height: normal;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-
-  @media (max-width: 767px) {
-    font-size: 22px;
-    padding: 37px 0;
-    letter-spacing: -0.66px;
-  }
 }
 
 .projects__btn:hover {
@@ -480,3 +382,111 @@ body {
 }
 
 /* FOOTER=============/ */
+
+/* NEDIA-QUERY */
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .section {
+    padding-bottom: 120px;
+  }
+
+  .section__item {
+    padding-bottom: 80px;
+  }
+
+  .section__description {
+    margin-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: -0.75px;
+  }
+
+  .section__item-image {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .section__link-btn {
+    letter-spacing: -0.6px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+    letter-spacing: -1.5px;
+  }
+
+  .about__description {
+    max-width: 690px;
+    font-size: 35px;
+    letter-spacing: -1.05px;
+  }
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .section {
+    padding-bottom: 80px;
+  }
+
+  .section__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: -0.42px;
+  }
+
+  .section__item {
+    padding-bottom: 49px;
+  }
+
+  .section__description {
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: -0.54px;
+  }
+
+  .section__link {
+    font-size: 16px;
+    letter-spacing: -0.48px;
+  }
+
+  .section__link-btn {
+    padding: 15.21px 31.41px;
+    font-size: 16px;
+    letter-spacing: -0.46px;
+  }
+
+  .hero__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 0.95;
+    letter-spacing: -0.9px
+  }
+
+  .hero__text {
+    bottom: 15px;
+    left: 15px;
+    margin-bottom: 25px;
+    max-width: 250px;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+
+  .about__description {
+    max-width: 100%;
+    font-size: 22px;
+    letter-spacing: -0.66px;
+  }
+
+  .projects__btn {
+    font-size: 22px;
+    padding: 37px 0;
+    letter-spacing: -0.66px;
+  }
+}
