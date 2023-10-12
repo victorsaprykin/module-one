@@ -206,6 +206,11 @@ body {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
+.section__item-image img {
+  display: block;
+  max-width: 100%;
+}
+
 .projects__btn:hover {
   border: none;
   background-color: #ad1818;
@@ -423,6 +428,12 @@ body {
     font-size: 35px;
     letter-spacing: -1.05px;
   }
+
+  .hero__description {
+    position: relative;
+    background: url("./../img/hero.jpg") center / cover no-repeat;
+    height: 400px;
+  }
 }
 
 /* NEDIA-QUERY MOBILE*/
@@ -466,6 +477,12 @@ body {
     letter-spacing: -0.9px
   }
 
+  .hero__description {
+    position: relative;
+    background: url("./../img/hero.jpg") 40% / cover no-repeat;
+    height: 304px;
+  } 
+
   .hero__text {
     bottom: 15px;
     left: 15px;
@@ -487,4 +504,5 @@ body {
     padding: 37px 0;
     letter-spacing: -0.66px;
   }
+
 }
