@@ -1,0 +1,77 @@
+.contacts {
+  padding-top: 150px;
+  padding-bottom: 123px;
+}
+
+.contacts-title {
+  position: relative;
+  margin-bottom: 74px;
+}
+
+.contacts-tel::before {
+  content: "";
+  position: absolute;
+  background: url(./../img/phon.svg) center / cover no-repeat;
+  width: 13px;
+  height: 22px;
+  top: -44px;
+  left: 0;
+}
+
+.contacts-mail::before {
+  content: "";
+  position: absolute;
+  background: url(./../img/mail.svg) center / cover no-repeat;
+  width: 24px;
+  height: 24px;
+  top: -44px;
+  left: 0;
+}
+
+.contacts__box {
+  display: flex;
+  gap: 104px;
+}
+
+.contacts-tel,
+.contacts-mail {
+  position: relative;
+  display: block;
+  width: max-content;
+  color: inherit;
+  text-decoration: none;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1.8px;
+  transition: color 0.5s ease-in-out;
+}
+
+.contacts-tel {
+  letter-spacing: -1px;
+}
+
+.contacts-tel::after,
+.contacts-mail::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #121212;
+  transition: width 0.5s ease-in-out;
+}
+
+.contacts-tel {
+  margin-bottom: 30px;
+}
+
+.contacts-mail:hover,
+.contacts-tel:hover {
+  opacity: 0.5;
+}
+
+.contacts-tel:hover::after,
+.contacts-mail:hover::after {
+  width: 100%;
+}

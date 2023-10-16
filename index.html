@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Метрика</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
 
   <body>
-
     <!-- HEADER============= -->
 
-    <header class="header none">
+    <header class="header">
       <div class="container">
         <div class="header__inner">
           <a href="/" class="header__logo">
             <img
               src="./img/logo.svg"
               alt="Логотип Метрика"
-              class="header__logo-image"
-            />
+              class="header__logo-image">
           </a>
           <nav class="header__nav">
             <ul class="header__nav-list">
@@ -49,11 +46,10 @@
       </div>
     </header>
 
-<!-- HEADER=================/ -->
+    <!-- HEADER=================/ -->
 
     <main class="main">
-
-<!-- HERO=================== -->
+      <!-- HERO=================== -->
 
       <section class="section hero">
         <div class="container">
@@ -84,9 +80,9 @@
               каждого интерьера, вплоть до каждой детали — нацелены на
               результат.
             </p>
-            <button href="#!" class="section__link section__link-btn">
+            <a href="#services" class="section__link section__link-btn">
               Посмотреть услуги
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -94,31 +90,31 @@
       <!-- ABOUT================== /-->
 
       <!-- PROJECTS=============== -->
-      
+
       <section class="section projects" id="projects">
         <div class="container">
           <h2 class="section__title">Проекты</h2>
-          <div class="section__item">
-            <div class="section__item-image">
-              <img src="./img/projects-1.jpg" alt="Фото интерьера" />
+          <div class="projects-item">
+            <div class="projects-item__image">
+              <img src="./img/projects-1.jpg" alt="Фото интерьера">
             </div>
             <h3 class="section__description">
               ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
             </h3>
             <a href="#!" class="section__link">Подробнее →</a>
           </div>
-          <div class="section__item">
-            <div class="section__item-image">
-              <img src="./img/projects-2.jpg" alt="Фото интерьера" />
+          <div class="projects-item">
+            <div class="projects-item__image">
+              <img src="./img/projects-2.jpg" alt="Фото интерьера">
             </div>
             <h3 class="section__description">
               ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
             </h3>
             <a href="#!" class="section__link">Подробнее →</a>
           </div>
-          <div class="section__item">
-            <div class="section__item-image">
-              <img src="./img/projects-3.jpg" alt="Фото интерьера" />
+          <div class="projects-item">
+            <div class="projects-item__image">
+              <img src="./img/projects-3.jpg" alt="Фото интерьера">
             </div>
             <h3 class="section__description">
               ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
@@ -129,56 +125,128 @@
         </div>
       </section>
 
-       <!-- PROJECTS=============== /-->
+      <!-- PROJECTS=============== /-->
 
-       <!-- SERVICES================= -->
+      <!-- SERVICES================= -->
 
-      <section class="section services none" id="services">
+      <section class="section services" id="services">
         <div class="container">
           <h2 class="section__title">Услуги</h2>
-          <div class="services__item">
-            <div class="section__item-image">
-              <img src="./img/services-1.jpg" alt="План помещения" />
-            </div>
-            <h3 class="section__description-light">
-              Планировочное решение — от 2500₽/м²
-            </h3>
-          </div>
-          <div class="services__item">
-            <div class="section__item-image">
-              <img src="./img/services-2.jpg" alt="Цветовая палитра RAL" />
-            </div>
-            <h3 class="section__description-light">
-              Дизайн-проект — от 3000₽/м²
-            </h3>
-          </div>
-          <div class="services__item">
-            <div class="section__item-image">
-              <img src="./img/services-3.jpg" alt="Проверка проекта" />
-            </div>
-            <h3 class="section__description-light">
-              Авторский надзор — от 30 000₽ в месяц
-            </h3>
-          </div>
-          <div class="services__item">
-            <div class="section__item-image">
-              <img
-                src="./img/services-4.jpg"
-                alt="Складские помещения компании"
-              />
-            </div>
-            <h3 class="section__description-light">
-              Комплектация — 5% от стоимости спецификации
-            </h3>
-          </div>
+          <ul class="services-wrapper">
+            <li class="services-item">
+              <div class="services-item__image-sticker">
+                <p>от 2500₽/м²</p>
+              </div>
+              <div class="services-item__image">
+                <img src="./img/services-1.jpg" alt="План помещения">
+              </div>
+              <h3 class="section__description-light">Планировочное решение</h3>
+            </li>
+            <li class="services-item">
+              <div class="services-item__image-sticker">
+                <p>от 2500₽/м²</p>
+              </div>
+              <div class="services-item__image">
+                <img src="./img/services-2.jpg" alt="Цветовая палитра RAL">
+              </div>
+              <h3 class="section__description-light">Дизайн-проект</h3>
+            </li>
+            <li class="services-item">
+              <div class="services-item__image-sticker">
+                <p>от 30 000₽/мес</p>
+              </div>
+              <div class="services-item__image">
+                <img src="./img/services-3.jpg" alt="Проверка проекта">
+              </div>
+              <h3 class="section__description-light">Авторский надзор</h3>
+            </li>
+            <li class="services-item">
+              <div class="services-item__image">
+                <div class="services-item__image-sticker">
+                  <p>5% от стоимости</p>
+                </div>
+                <img
+                  src="./img/services-4.jpg" alt="Складские помещения компании">
+              </div>
+              <h3 class="section__description-light">Комплектация</h3>
+            </li>
+          </ul>
+          <button class="services__btn">Заказать услугу</button>
         </div>
       </section>
 
-     <!-- SERVICES=================/ -->
+      <!-- SERVICES=================/ -->
+
+      <!-- TESTIMONIALS============= -->
+
+      <section class="section testimonials">
+        <div class="container">
+          <h2 class="section__title">отзывы</h2>
+          <ul class="testimonials__wrapper">
+            <li class="testimonials__item">
+              <h3 class="testimonials__item-title">Ксения, проект 65 кв.м.</h3>
+              <div class="testimonials__item-text">
+                <p>
+                  Хочу искренне поблагодарить Вас за работу, проделанную на
+                  высоком уровне! Нам с мужем было очень приятно с Вами
+                  работать! Спасибо за Ваше умение правильно слышать пожелания
+                  своих клиентов и выполнять работу, которая превосходит все
+                  ожидания! Мы даже не надеялись, что на 34 кв.м. кто-то сможет
+                  нам грамотно разместить все, что мы хотим и даже больше!
+                </p>
+                <p>
+                  Вам удалось это просто превосходно! Нам лишь осталось
+                  воплотить красоту, которую Вы нам создали в жизнь и поделиться
+                  с Вами результатом!
+                </p>
+              </div>
+            </li>
+            <li class="testimonials__item">
+              <h3 class="testimonials__item-title">Регина, проект 89 кв.м.</h3>
+              <div class="testimonials__item-text">
+                <p>
+                  Спасибо большое за такой классный проект! Все стильно, круто,
+                  продумано! Очень приятно было с вами работать! Спасибо, что
+                  терпели наши «хочу это, хочу то» в поисках идеального для нас
+                  ремонта. Здорово, что мы нашли такого основательного,
+                  ответственного и внимательного к деталям дизайнера!
+                </p>
+                <p>
+                  Хочется скорее реализовать проект и наслаждаться современной,
+                  функциональной и красивой квартирой! Будем рекомендовать Вас
+                  всем друзьям и знакомым!
+                </p>
+              </div>
+            </li>
+            <li class="testimonials__item">
+              <h3 class="testimonials__item-title">Яна, проект 120 кв.м.</h3>
+              <div class="testimonials__item-text">
+                <p>
+                  Хотелось бы сказать большое спасибо за проделанную работу! В
+                  задачу Марины входила разработка дизайн-проекта в минимальные
+                  сроки, и мне, конечно, не хотелось при этом потерять качество
+                  выполнения работы. Но волнения были напрасны: все вопросы
+                  решались оперативно, всегда предлагалось несколько вариантов
+                  решения, а также предоставлялись комментарии, какой способ
+                  решения будет более подходящим.
+                </p>
+                <p>
+                  В итоге проект был сдан в оговоренный срок, и мне просто не
+                  терпится приступить к его реализации! Проект получился очень
+                  стильным и современным! Буду рекомендовать Вас тем, кому еще
+                  предстоит это непростое дело - ремонт!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS==========/ -->
 
       <!-- EXAMPLE================ -->
 
-      <div class="example none">
+      <div class="example">
         <div class="container exanple-content">
           <p class="example__text">
             Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж
@@ -190,25 +258,24 @@
 
       <!-- CONTACTS=============== -->
 
-      <section class="section contacts none" id="contacts">
+      <section class="section contacts" id="contacts">
         <div class="container">
           <h2 class="section__title contacts-title">Контакты</h2>
-          <a href="tel:+79358954535" class="contacts-tel"
-            >+7 935 895-45-35</a
-          >
-          <a href="mailto:hello@mail.com" class="contacts-mail"
-            >hello@mail.com</a
-          >
+          <div class="contacts__box">
+            <a href="tel:+79358954535" class="contacts-tel">+7 935 895-45-35</a>
+            <a href="mailto:hello@mail.com" class="contacts-mail"
+              >hello@mail.com</a
+            >
+          </div>
         </div>
       </section>
 
       <!-- CONTACTS=============== /-->
-
     </main>
 
     <!-- FOOTER================= -->
 
-    <footer class="footer none">
+    <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <nav class="footer__nav">

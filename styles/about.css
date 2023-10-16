@@ -1,0 +1,21 @@
+.about {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.about__description {
+  margin-bottom: 30px;
+  width: 1048px;
+  font-size: 45px;
+  line-height: 1.355;
+  letter-spacing: -1.35px;
+}
+
+
+
+@media (max-width: 767px) {
+  .about__description {
+    max-width: 100%;
+    font-size: 22px;
+    letter-spacing: -0.66px;
+  }
+}

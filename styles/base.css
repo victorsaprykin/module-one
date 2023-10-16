@@ -1,0 +1,136 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #121212;
+}
+
+.none {
+  display: none;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 152px;
+  padding-bottom: 153px;
+}
+
+.section__title {
+  margin-bottom: 35px;
+  font-size: 18px;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+}
+
+.section__description {
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.section__link {
+  display: inline-block;
+  padding: 0;
+  text-decoration: none;
+  letter-spacing: -0.6px;
+  line-height: normal;
+  color: #ad1818;
+  transition: transform 0.5s ease-in-out;
+}
+
+.section__link-btn {
+  display: inline-block;
+  font-size: inherit;
+  padding: 20px 40px;
+  background-color: #ad1818;
+  border-radius: 5px;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  color: #fff;
+  transition: transform 0.5s ease-in-out;
+}
+
+.section__link-btn:hover,
+.section__link:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .section {
+    padding-bottom: 120px;
+  }
+
+  .projects-item {
+    padding-bottom: 80px;
+  }
+
+  .section__description {
+    margin-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: -0.75px;
+  }
+
+  .section__description-light {
+    font-size: 25px;
+    letter-spacing: -0.75px;
+  }
+
+  .projects-item__image {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .section__link-btn {
+    letter-spacing: -0.6px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .section {
+    padding-bottom: 80px;
+  }
+
+  .section__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: -0.42px;
+  }
+
+  .section__description {
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: -0.54px;
+  }
+
+  .section__link {
+    font-size: 16px;
+    letter-spacing: -0.48px;
+  }
+
+  .section__link-btn {
+    padding: 15.21px 31.41px;
+    font-size: 16px;
+    letter-spacing: -0.46px;
+  }
+
+  .section__description-light {
+    font-size: 18px;
+    letter-spacing: -0.54px;
+  }
+}
