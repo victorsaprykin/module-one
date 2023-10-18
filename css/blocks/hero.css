@@ -12,8 +12,9 @@
 
 .hero__description {
   position: relative;
-  background: url("./../img/hero.jpg") center / cover no-repeat;
+  background: url("./../../img/hero.jpg") center / cover no-repeat;
   height: 500px;
+  overflow: hidden;
 }
 
 .hero__description:after {
@@ -43,44 +44,44 @@
 
 @media (max-width: 1199px) {
   .hero__title {
+    width: 800px;
     font-size: 50px;
     letter-spacing: -1.5px;
-  }
-
-  .about__description {
-    max-width: 690px;
-    font-size: 35px;
-    letter-spacing: -1.05px;
+    line-height: 1.2;
   }
 
   .hero__description {
-    position: relative;
-    background: url("./../img/hero.jpg") center / cover no-repeat;
+    background: url("./../img/hero_tablet.jpg") center / cover no-repeat;
     height: 400px;
+  }
+
+  .hero__text {
+    bottom: 30px;
   }
 }
 
 @media (max-width: 767px) {
   .hero__title {
     margin-bottom: 25px;
+    width: 100%;
     font-size: 30px;
-    line-height: 0.95;
+    line-height: 1.05;
     letter-spacing: -0.9px;
-  }
-
-  .hero__description {
-    position: relative;
-    background: url("./../img/hero.jpg") 40% / cover no-repeat;
-    height: 304px;
   }
 
   .hero__text {
     bottom: 15px;
     left: 15px;
-    margin-bottom: 25px;
-    max-width: 250px;
+    max-width: 312px;
     font-size: 16px;
     line-height: normal;
     letter-spacing: -0.48px;
+  }
+
+  @media (max-width: 400px) {
+    .hero__description {
+      background: url("./../img/hero_mob.jpg") center / cover no-repeat;
+      height: 304px;
+    }
   }
 }

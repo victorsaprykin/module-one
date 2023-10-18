@@ -10,7 +10,14 @@
   letter-spacing: -1.35px;
 }
 
-
+@media (max-width: 1199px) {
+  .about__description {
+    margin-bottom: 30px;
+    width: 690px;
+    font-size: 35px;
+    letter-spacing: -1.05px;
+  }
+}
 
 @media (max-width: 767px) {
   .about__description {

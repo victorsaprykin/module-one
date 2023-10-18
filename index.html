@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Метрика</title>
-    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="icon" href="./img/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
   </head>
 
   <body>
     <!-- HEADER============= -->
 
-    <header class="header">
+    <header class="header none">
       <div class="container">
         <div class="header__inner">
           <a href="/" class="header__logo">
@@ -94,34 +95,64 @@
       <section class="section projects" id="projects">
         <div class="container">
           <h2 class="section__title">Проекты</h2>
-          <div class="projects-item">
-            <div class="projects-item__image">
-              <img src="./img/projects-1.jpg" alt="Фото интерьера">
-            </div>
-            <h3 class="section__description">
-              ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
-            </h3>
-            <a href="#!" class="section__link">Подробнее →</a>
-          </div>
-          <div class="projects-item">
-            <div class="projects-item__image">
-              <img src="./img/projects-2.jpg" alt="Фото интерьера">
-            </div>
-            <h3 class="section__description">
-              ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
-            </h3>
-            <a href="#!" class="section__link">Подробнее →</a>
-          </div>
-          <div class="projects-item">
-            <div class="projects-item__image">
-              <img src="./img/projects-3.jpg" alt="Фото интерьера">
-            </div>
-            <h3 class="section__description">
-              ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
-            </h3>
-            <a href="#!" class="section__link">Подробнее →</a>
-          </div>
-          <button class="projects__btn">Смотреть все проекты</button>
+          <ul class="projects-wrapper">
+            <li class="projects-item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/projects-1_mob.jpg">
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./img/projects-1_tablet.jpg">
+                <img
+                  class="projects-item__image"
+                  src="./img/projects-1.jpg"
+                  alt="Фото интерьера">
+              </picture>
+
+              <h3 class="section__description">
+                ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
+              </h3>
+              <a href="#!" class="section__link">Подробнее →</a>
+            </li>
+            <li class="projects-item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/projects-2_mob.jpg">
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./img/projects-2_tablet.jpg">
+                <img
+                  class="projects-item__image"
+                  src="./img/projects-2.jpg"
+                  alt="Фото интерьера">
+              </picture>
+              <h3 class="section__description">
+                ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
+              </h3>
+              <a href="#!" class="section__link">Подробнее →</a>
+            </li>
+            <li class="projects-item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/projects-3_mob.jpg">
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./img/projects-3_tablet.jpg">
+                <img
+                  class="projects-item__image"
+                  src="./img/projects-3.jpg"
+                  alt="Фото интерьера">
+              </picture>
+              <h3 class="section__description">
+                ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
+              </h3>
+              <a href="#!" class="section__link">Подробнее →</a>
+            </li>
+          </ul>
+          <button class="btn projects__btn">Смотреть все проекты</button>
         </div>
       </section>
 
@@ -137,41 +168,76 @@
               <div class="services-item__image-sticker">
                 <p>от 2500₽/м²</p>
               </div>
-              <div class="services-item__image">
-                <img src="./img/services-1.jpg" alt="План помещения">
-              </div>
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/services-1_mob.jpg">
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./img/services-1_tablet.jpg">
+                <img
+                  class="services-item__image"
+                  src="./img/services-1.jpg"
+                  alt="План помещения">
+              </picture>
               <h3 class="section__description-light">Планировочное решение</h3>
             </li>
             <li class="services-item">
               <div class="services-item__image-sticker">
                 <p>от 2500₽/м²</p>
               </div>
-              <div class="services-item__image">
-                <img src="./img/services-2.jpg" alt="Цветовая палитра RAL">
-              </div>
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/services-2_mob.jpg">
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./img/services-2_tablet.jpg">
+                <img
+                  class="services-item__image"
+                  src="./img/services-2.jpg"
+                  alt="Цветовая палитра RAL">
+              </picture>
               <h3 class="section__description-light">Дизайн-проект</h3>
             </li>
             <li class="services-item">
               <div class="services-item__image-sticker">
                 <p>от 30 000₽/мес</p>
               </div>
-              <div class="services-item__image">
-                <img src="./img/services-3.jpg" alt="Проверка проекта">
-              </div>
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/services-3_mob.jpg">
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./img/services-3_tablet.jpg">
+                <img
+                  class="services-item__image"
+                  src="./img/services-3.jpg"
+                  alt="Проверка проекта">
+              </picture>
               <h3 class="section__description-light">Авторский надзор</h3>
             </li>
             <li class="services-item">
-              <div class="services-item__image">
-                <div class="services-item__image-sticker">
-                  <p>5% от стоимости</p>
-                </div>
-                <img
-                  src="./img/services-4.jpg" alt="Складские помещения компании">
+              <div class="services-item__image-sticker">
+                <p>5% от стоимости</p>
               </div>
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/services-4_mob.jpg">
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./img/services-4_tablet.jpg">
+                <img
+                  class="services-item__image"
+                  src="./img/services-4.jpg"
+                  alt="Складские помещения компании">
+              </picture>
               <h3 class="section__description-light">Комплектация</h3>
             </li>
           </ul>
-          <button class="services__btn">Заказать услугу</button>
+          <button class=" btn services__btn">Заказать услугу</button>
         </div>
       </section>
 
@@ -246,7 +312,7 @@
 
       <!-- EXAMPLE================ -->
 
-      <div class="example">
+      <div class="example none">
         <div class="container exanple-content">
           <p class="example__text">
             Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж
@@ -258,7 +324,7 @@
 
       <!-- CONTACTS=============== -->
 
-      <section class="section contacts" id="contacts">
+      <section class="section contacts none" id="contacts">
         <div class="container">
           <h2 class="section__title contacts-title">Контакты</h2>
           <div class="contacts__box">
@@ -275,7 +341,7 @@
 
     <!-- FOOTER================= -->
 
-    <footer class="footer">
+    <footer class="footer none">
       <div class="container">
         <div class="footer__inner">
           <nav class="footer__nav">

@@ -11,7 +11,7 @@
 .contacts-tel::before {
   content: "";
   position: absolute;
-  background: url(./../img/phon.svg) center / cover no-repeat;
+  background: url(./../../img/phon.svg) center / cover no-repeat;
   width: 13px;
   height: 22px;
   top: -44px;
@@ -21,7 +21,7 @@
 .contacts-mail::before {
   content: "";
   position: absolute;
-  background: url(./../img/mail.svg) center / cover no-repeat;
+  background: url(./../../img/mail.svg) center / cover no-repeat;
   width: 24px;
   height: 24px;
   top: -44px;
@@ -62,9 +62,9 @@
   transition: width 0.5s ease-in-out;
 }
 
-.contacts-tel {
+/* .contacts-tel {
   margin-bottom: 30px;
-}
+} */
 
 .contacts-mail:hover,
 .contacts-tel:hover {
@@ -74,4 +74,17 @@
 .contacts-tel:hover::after,
 .contacts-mail:hover::after {
   width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .contacts {
+    padding-top: 120px;
+  }
+
+  .contacts-tel,
+  .contacts-mail {
+    font-size: 45px;
+    line-height: 1.33;
+    letter-spacing: -1.35px;
+  }
 }

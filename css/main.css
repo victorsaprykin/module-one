@@ -1,0 +1,10 @@
+@import "blocks/base.css";
+@import "blocks/header.css";
+@import "blocks/hero.css";
+@import "blocks/about.css";
+@import "blocks/projects.css";
+@import "blocks/services.css";
+@import "blocks/testimonials.css";
+@import "blocks/example.css";
+@import "blocks/contacts.css";
+@import "blocks/footer.css";
