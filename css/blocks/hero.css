@@ -51,7 +51,7 @@
   }
 
   .hero__description {
-    background: url("./../img/hero_tablet.jpg") center / cover no-repeat;
+    background: url("./../../img/hero_tablet.jpg") center / cover no-repeat;
     height: 400px;
   }
 
@@ -80,7 +80,7 @@
 
   @media (max-width: 400px) {
     .hero__description {
-      background: url("./../img/hero_mob.jpg") center / cover no-repeat;
+      background: url("./../../img/hero_mob.jpg") center / cover no-repeat;
       height: 304px;
     }
   }
