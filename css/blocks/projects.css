@@ -34,8 +34,9 @@
   }
 
   .projects-item__image {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     width: 100%;
+    height: 450px;
   }
 
   .projects-item__image img {
@@ -58,5 +59,6 @@
 
   .projects-item__image {
     margin-bottom: 17px;
+    height: 250px;
   }
 }

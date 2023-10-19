@@ -1,6 +1,6 @@
 .contacts {
   padding-top: 150px;
-  padding-bottom: 123px;
+  padding-bottom: 151px;
 }
 
 .contacts-title {
@@ -30,6 +30,7 @@
 
 .contacts__box {
   display: flex;
+  align-items: center;
   gap: 104px;
 }
 
@@ -62,10 +63,6 @@
   transition: width 0.5s ease-in-out;
 }
 
-/* .contacts-tel {
-  margin-bottom: 30px;
-} */
-
 .contacts-mail:hover,
 .contacts-tel:hover {
   opacity: 0.5;
@@ -79,12 +76,55 @@
 @media (max-width: 1199px) {
   .contacts {
     padding-top: 120px;
+    padding-bottom: 125px;
   }
 
+  .contacts__box {
+    gap: 127px;
+  }
   .contacts-tel,
   .contacts-mail {
     font-size: 45px;
     line-height: 1.33;
     letter-spacing: -1.35px;
+  }
+
+  .contacts-tel::after,
+  .contacts-mail::after {
+    bottom: 3px;
+  }
+
+  @media (max-width: 767px) {
+    .contacts {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .contacts-title {
+      margin-bottom: 65px;
+    }
+
+    .contacts__box {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 58px;
+    }
+
+    .contacts-tel,
+    .contacts-mail {
+      font-size: 35px;
+      line-height: 1.3;
+      letter-spacing: -1.05px;
+    }
+
+    .contacts-mail::before {
+      background: url(./../../img/mail_mob.svg) center / cover no-repeat;
+      top: -38px;
+    }
+
+    .contacts-tel::before {
+      background: url(./../../img/phon_mob.svg) center / cover no-repeat;
+      top: -38px;
+    }
   }
 }

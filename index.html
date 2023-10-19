@@ -310,21 +310,61 @@
 
       <!-- TESTIMONIALS==========/ -->
 
-      <!-- EXAMPLE================ -->
+      <!-- GALLERY================ -->
 
-      <div class="example none">
-        <div class="container exanple-content">
-          <p class="example__text">
-            Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж
-          </p>
+      <section class="section-gallery">
+        <div class="gallery">
+         
+            <div class="container">
+              <h4 class="gallery__title">
+                галерея проектов
+              </h4>
+              <div class="gallery__controlls">
+                <button class="gallery__control-prev"></button>
+                <button class="gallery__control-next"></button>
+              </div>
+            </div>
+          <div class="gallery__slides">
+            <div class="gallery__slide gallery__slide_active">
+              <img src="./img/gallery_1.jpg" alt="Фото двухкомнтаной квартиры в ЖК Лесной Пейзаж" class="gallery__slide-image">
+              
+                <div class="container">
+                  <p class="gallery__subtitle">Проект  Двухкомнтаной квартиры в ЖК Лесной Пейзаж</p>
+                </div>
+            </div>
+            <div class="gallery__slide">
+              <img src="./img/gallery_2.jpg" alt="Фото гостиной в ЖК Маяк" class="gallery__slide-image">
+              
+                <div class="container">
+                  <p class="gallery__subtitle">Проект гостиной в ЖК Маяк</p>
+                </div>
+              
+            </div>
+            <div class="gallery__slide">
+              <img src="./img/gallery_3.jpg" alt="Фото кухни-гостиной в частном доме" class="gallery__slide-image">
+              
+                <div class="container">
+                  <p class="gallery__subtitle">Визуализация кухни-гостиной в частном доме</p>
+                </div>
+              
+            </div>
+            <div class="gallery__slide">
+              <img src="./img/gallery_4.jpg" alt="Фото Проект кухни в скандинавском стиле для ЖК Северный Ветер" class="gallery__slide-image">
+              
+                <div class="container">
+                  <p class="gallery__subtitle">Проект кухни в скандинавском стиле для ЖК Северный Ветер</p>
+                </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+ 
 
-      <!-- EXAMPLE================ /-->
+      <!-- GALLERY================ /-->
 
       <!-- CONTACTS=============== -->
 
-      <section class="section contacts none" id="contacts">
+      <section class="section contacts" id="contacts">
         <div class="container">
           <h2 class="section__title contacts-title">Контакты</h2>
           <div class="contacts__box">
@@ -341,7 +381,7 @@
 
     <!-- FOOTER================= -->
 
-    <footer class="footer none">
+    <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <nav class="footer__nav">
@@ -370,5 +410,6 @@
     </footer>
 
     <!-- FOOTER================= /-->
+    <script src="./gallery.js"></script>
   </body>
 </html>

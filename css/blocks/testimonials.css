@@ -30,7 +30,7 @@
 }
 
 .testimonials__item-text p:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 @media (max-width: 1199px) {
@@ -39,11 +39,12 @@
   }
 
   .testimonials__wrapper {
-    column-gap: 6px;
+    column-gap: 8px;
+    row-gap: 78px;
   }
 
   .testimonials__item {
-    width: calc(50% - 4px);
+    width: calc(50% - 10px);
   }
 
   .testimonials__item-title {
@@ -67,7 +68,8 @@
   }
   
   .testimonials {
-    padding-top: 84px;
+    padding-top: 82px;
+    padding-bottom: 92px;
   }
 
   .testimonials__wrapper {

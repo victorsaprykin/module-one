@@ -37,8 +37,29 @@
 .footer__copyright-text {
   display: inline-block;
   text-align: center;
-  width: 389px;
   line-height: normal;
   letter-spacing: -0.6px;
   opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+  .footer__inner {
+    padding: 27px 26px;
+  }
+
+  .footer__nav-list {
+    gap: 30px;
+  }
+  .footer__nav {
+    margin-bottom: 36px;
+  }
+  .footer__nav-link {
+    font-size: 12px;
+    letter-spacing: -0.36px;
+  }
+
+  .footer__copyright-text {
+    font-size: 13px;
+    letter-spacing: -0.39px;
+  }
 }
