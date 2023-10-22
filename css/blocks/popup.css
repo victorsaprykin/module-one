@@ -68,7 +68,6 @@
   background: url("../../img/icons_cross.svg") center / cover no-repeat;
 }
 
-
 .popup__input {
   display: block;
   padding: 10px 0;
@@ -80,13 +79,12 @@
 }
 
 .popup__input::placeholder {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .popup__input:focus {
   outline: none;
 }
-
 
 .popup__input:last-of-type {
   margin-bottom: 80px;
@@ -118,6 +116,6 @@
 
   .popup__input {
     font-size: 18px;
-    letter-spacing: -0.54px;      
+    letter-spacing: -0.54px;
   }
 }
