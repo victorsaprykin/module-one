@@ -14,8 +14,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.burger__btn {
-  display: none;
+.burger__btn:hover {
+
 }
 
 .burger_open {
@@ -32,7 +32,12 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  transition: all 0.5s ease-in-out;
+  transform: translateX(100%);
+  transition: transform .5s linear ;
+}
+
+.burger_open .burger__content {
+  transform: translateX(0);
 }
 
 .burger__logo {
