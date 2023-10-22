@@ -14,10 +14,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-.burger__btn:hover {
-
-}
-
 .burger_open {
   visibility: visible;
   opacity: 1;
