@@ -1,5 +1,6 @@
 @import "blocks/base.css";
 @import "blocks/header.css";
+@import "blocks/burger.css";
 @import "blocks/hero.css";
 @import "blocks/about.css";
 @import "blocks/projects.css";
@@ -8,3 +9,4 @@
 @import "blocks/gallery.css";
 @import "blocks/contacts.css";
 @import "blocks/footer.css";
+@import "blocks/popup.css";

@@ -12,7 +12,7 @@
 
 .hero__description {
   position: relative;
-  background: url("./../../img/hero.jpg") center / cover no-repeat;
+  background: url("../../img/hero.jpg") center / cover no-repeat;
   height: 500px;
   overflow: hidden;
 }

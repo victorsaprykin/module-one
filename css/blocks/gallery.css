@@ -36,14 +36,16 @@
 
 .gallery__slide {
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 100%;
   object-fit: cover;
   opacity: 0;
+  transition: width 0.5s ease-in-out;
 }
 
 .gallery__slide_active {
   opacity: 1;
+  width: 100%;
 }
 
 .gallery__subtitle {

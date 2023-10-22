@@ -1,0 +1,109 @@
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: end;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease-in-out;
+}
+
+.burger__btn {
+  display: none;
+}
+
+.burger_open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.burger__content {
+  padding-top: 60px;
+  padding-left: 30px;
+  width: 275px;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.burger__logo {
+  margin-bottom: 50px;
+  width: 156px;
+}
+
+.burger__nav-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.burger__nav {
+  margin-bottom: 87px;
+}
+
+.burger__nav-link {
+  font-size: 25px;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.burger__contacts-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.burger__contacts-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: -0.6px;
+}
+
+@media (max-width: 899px) {
+  .burger__btn {
+    display: block;
+    position: relative;
+    width: 50px;
+  }
+
+  .burger__btn::before,
+  .burger__btn::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -12px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burger__btn::after {
+    top: -6px;
+    width: 31px;
+  }
+
+  .burger-btn_open {
+    position: absolute;
+    right: 20px;
+    top: -31px;
+    width: 34px;
+    height: 34px;
+    z-index: 99;
+    background: url("../../img/icons_cross.svg") center / cover no-repeat;
+    transition: all 0.5s ease-in-out;
+  }
+}

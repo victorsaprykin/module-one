@@ -9,6 +9,10 @@ body {
   color: #121212;
 }
 
+.body_fixed {
+  overflow: hidden;
+}
+
 .none {
   display: none;
 }

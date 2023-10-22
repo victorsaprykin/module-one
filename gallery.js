@@ -1,5 +1,4 @@
 const ACTIVE_SLIDE_CLASSNAME = 'gallery__slide_active';
-
 const slidesNodes = Array.from(document.querySelectorAll('.gallery__slide'));
 console.log(slidesNodes);
 const prevButtonNode = document.querySelector('.gallery__control-prev');

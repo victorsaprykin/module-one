@@ -11,7 +11,7 @@
 .contacts-tel::before {
   content: "";
   position: absolute;
-  background: url(./../../img/phon.svg) center / cover no-repeat;
+  background: url(../../img/phon.svg) center / cover no-repeat;
   width: 13px;
   height: 22px;
   top: -44px;
@@ -21,7 +21,7 @@
 .contacts-mail::before {
   content: "";
   position: absolute;
-  background: url(./../../img/mail.svg) center / cover no-repeat;
+  background: url(../../img/mail.svg) center / cover no-repeat;
   width: 24px;
   height: 24px;
   top: -44px;

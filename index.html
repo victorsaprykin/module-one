@@ -18,12 +18,12 @@
   <body>
     <!-- HEADER============= -->
 
-    <header class="header none">
+    <header class="header">
       <div class="container">
         <div class="header__inner">
           <a href="/" class="header__logo">
             <img
-              src="./img/logo.svg"
+              src="img/logo.svg"
               alt="Логотип Метрика"
               class="header__logo-image">
           </a>
@@ -43,6 +43,43 @@
               </li>
             </ul>
           </nav>
+
+          <!-- BURGER--------- -->
+
+          <button class="js-burger-btn burger__btn"></button>
+          <div class="js-burger burger">
+            <div class="burger__content">
+              <img src="img/logo_burger.svg" alt="Логотип Метрика" class="burger__logo">
+              <nav class="burger__nav">
+                
+                  <ul class="burger__nav-list">
+                    <li class="burger__nav-item">
+                      <a href="#about" class="burger__nav-link">О нас</a>
+                    </li>
+                    <li class="burger__nav-item">
+                      <a href="#projects" class="burger__nav-link">Проекты</a>
+                    </li>
+                    <li class="burger__nav-item">
+                      <a href="#services" class="burger__nav-link">Услуги</a>
+                    </li>
+                    <li class="burger__nav-item">
+                      <a href="#contacts" class="burger__nav-link">Контакты</a>
+                    </li>
+                </ul>
+              </nav>
+              <div class="burger__contacts js-burger__content">
+                <h2 class="burger__contacts-title">для связи:</h2>
+                <div class="burger__contacts-box">
+                  <a href="tel:+79358954535" class="burger__contacts-tel">+7 935 895-45-35</a>
+                  <a href="mailto:hello@mail.com" class="burger__contacts-mail"
+                    >hello@mail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BURGER----------/-->
+
         </div>
       </div>
     </header>
@@ -50,6 +87,25 @@
     <!-- HEADER=================/ -->
 
     <main class="main">
+			<!-- POPUP -->
+			<div class="js-popup popup">
+				<div class="js-popup__content popup__content">
+					<button class="js-popup__close-btn popup__close-btn"></button>
+					<h4 class="popup__title">Заказать услугу</h4>
+					<p class="popup__subtitle">Заполните форму, мы свяжемся с вами в течение суток
+					</p>		
+					<form action="#" class="popup__form form">
+            <input class="input popup__input" type="text" name="name" placeholder="Имя">
+            <input class="input popup__input" type="email" name="email" placeholder="Электронная почта">
+            <input class="input popup__input" type="tel" name="tel" placeholder="Номер телефона">
+          </form>
+					<button class="popup__btn">Отправить</button>
+				</div>
+			</div>
+
+			<!-- POPUP /-->
+
+
       <!-- HERO=================== -->
 
       <section class="section hero">
@@ -100,13 +156,13 @@
               <picture>
                 <source
                   media="(max-width: 767px)"
-                  srcset="./img/projects-1_mob.jpg">
+                  srcset="img/projects-1_mob.jpg">
                 <source
                   media="(max-width: 1199px)"
-                  srcset="./img/projects-1_tablet.jpg">
+                  srcset="img/projects-1_tablet.jpg">
                 <img
                   class="projects-item__image"
-                  src="./img/projects-1.jpg"
+                  src="img/projects-1.jpg"
                   alt="Фото интерьера">
               </picture>
 
@@ -119,13 +175,13 @@
               <picture>
                 <source
                   media="(max-width: 767px)"
-                  srcset="./img/projects-2_mob.jpg">
+                  srcset="img/projects-2_mob.jpg">
                 <source
                   media="(max-width: 1199px)"
-                  srcset="./img/projects-2_tablet.jpg">
+                  srcset="img/projects-2_tablet.jpg">
                 <img
                   class="projects-item__image"
-                  src="./img/projects-2.jpg"
+                  src="img/projects-2.jpg"
                   alt="Фото интерьера">
               </picture>
               <h3 class="section__description">
@@ -137,13 +193,13 @@
               <picture>
                 <source
                   media="(max-width: 767px)"
-                  srcset="./img/projects-3_mob.jpg">
+                  srcset="img/projects-3_mob.jpg">
                 <source
                   media="(max-width: 1199px)"
-                  srcset="./img/projects-3_tablet.jpg">
+                  srcset="img/projects-3_tablet.jpg">
                 <img
                   class="projects-item__image"
-                  src="./img/projects-3.jpg"
+                  src="img/projects-3.jpg"
                   alt="Фото интерьера">
               </picture>
               <h3 class="section__description">
@@ -152,7 +208,7 @@
               <a href="#!" class="section__link">Подробнее →</a>
             </li>
           </ul>
-          <button class="btn projects__btn">Смотреть все проекты</button>
+          <a class="btn projects__btn" href="#!" target="_blank">Смотреть все проекты</a>
         </div>
       </section>
 
@@ -171,13 +227,13 @@
               <picture>
                 <source
                   media="(max-width: 767px)"
-                  srcset="./img/services-1_mob.jpg">
+                  srcset="img/services-1_mob.jpg">
                 <source
                   media="(max-width: 1199px)"
-                  srcset="./img/services-1_tablet.jpg">
+                  srcset="img/services-1_tablet.jpg">
                 <img
                   class="services-item__image"
-                  src="./img/services-1.jpg"
+                  src="img/services-1.jpg"
                   alt="План помещения">
               </picture>
               <h3 class="section__description-light">Планировочное решение</h3>
@@ -189,13 +245,13 @@
               <picture>
                 <source
                   media="(max-width: 767px)"
-                  srcset="./img/services-2_mob.jpg">
+                  srcset="img/services-2_mob.jpg">
                 <source
                   media="(max-width: 1199px)"
-                  srcset="./img/services-2_tablet.jpg">
+                  srcset="img/services-2_tablet.jpg">
                 <img
                   class="services-item__image"
-                  src="./img/services-2.jpg"
+                  src="img/services-2.jpg"
                   alt="Цветовая палитра RAL">
               </picture>
               <h3 class="section__description-light">Дизайн-проект</h3>
@@ -207,13 +263,13 @@
               <picture>
                 <source
                   media="(max-width: 767px)"
-                  srcset="./img/services-3_mob.jpg">
+                  srcset="img/services-3_mob.jpg">
                 <source
                   media="(max-width: 1199px)"
-                  srcset="./img/services-3_tablet.jpg">
+                  srcset="img/services-3_tablet.jpg">
                 <img
                   class="services-item__image"
-                  src="./img/services-3.jpg"
+                  src="img/services-3.jpg"
                   alt="Проверка проекта">
               </picture>
               <h3 class="section__description-light">Авторский надзор</h3>
@@ -225,19 +281,19 @@
               <picture>
                 <source
                   media="(max-width: 767px)"
-                  srcset="./img/services-4_mob.jpg">
+                  srcset="img/services-4_mob.jpg">
                 <source
                   media="(max-width: 1199px)"
-                  srcset="./img/services-4_tablet.jpg">
+                  srcset="img/services-4_tablet.jpg">
                 <img
                   class="services-item__image"
-                  src="./img/services-4.jpg"
+                  src="img/services-4.jpg"
                   alt="Складские помещения компании">
               </picture>
               <h3 class="section__description-light">Комплектация</h3>
             </li>
           </ul>
-          <button class=" btn services__btn">Заказать услугу</button>
+          <button class="js-btn btn services__btn">Заказать услугу</button>
         </div>
       </section>
 
@@ -326,14 +382,14 @@
             </div>
           <div class="gallery__slides">
             <div class="gallery__slide gallery__slide_active">
-              <img src="./img/gallery_1.jpg" alt="Фото двухкомнтаной квартиры в ЖК Лесной Пейзаж" class="gallery__slide-image">
+              <img src="img/gallery_1.jpg" alt="Фото двухкомнтаной квартиры в ЖК Лесной Пейзаж" class="gallery__slide-image">
               
                 <div class="container">
                   <p class="gallery__subtitle">Проект  Двухкомнтаной квартиры в ЖК Лесной Пейзаж</p>
                 </div>
             </div>
             <div class="gallery__slide">
-              <img src="./img/gallery_2.jpg" alt="Фото гостиной в ЖК Маяк" class="gallery__slide-image">
+              <img src="img/gallery_2.jpg" alt="Фото гостиной в ЖК Маяк" class="gallery__slide-image">
               
                 <div class="container">
                   <p class="gallery__subtitle">Проект гостиной в ЖК Маяк</p>
@@ -341,7 +397,7 @@
               
             </div>
             <div class="gallery__slide">
-              <img src="./img/gallery_3.jpg" alt="Фото кухни-гостиной в частном доме" class="gallery__slide-image">
+              <img src="img/gallery_3.jpg" alt="Фото кухни-гостиной в частном доме" class="gallery__slide-image">
               
                 <div class="container">
                   <p class="gallery__subtitle">Визуализация кухни-гостиной в частном доме</p>
@@ -349,7 +405,7 @@
               
             </div>
             <div class="gallery__slide">
-              <img src="./img/gallery_4.jpg" alt="Фото Проект кухни в скандинавском стиле для ЖК Северный Ветер" class="gallery__slide-image">
+              <img src="img/gallery_4.jpg" alt="Фото Проект кухни в скандинавском стиле для ЖК Северный Ветер" class="gallery__slide-image">
               
                 <div class="container">
                   <p class="gallery__subtitle">Проект кухни в скандинавском стиле для ЖК Северный Ветер</p>
@@ -370,8 +426,7 @@
           <div class="contacts__box">
             <a href="tel:+79358954535" class="contacts-tel">+7 935 895-45-35</a>
             <a href="mailto:hello@mail.com" class="contacts-mail"
-              >hello@mail.com</a
-            >
+              >hello@mail.com</a>
           </div>
         </div>
       </section>
@@ -409,7 +464,10 @@
       </div>
     </footer>
 
+
     <!-- FOOTER================= /-->
+    <script src="./burger.js"></script>
+    <script src="./popup.js"></script>
     <script src="./gallery.js"></script>
   </body>
 </html>
