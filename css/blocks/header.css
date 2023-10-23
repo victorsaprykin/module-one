@@ -6,7 +6,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header__logo {
@@ -51,7 +51,7 @@
   opacity: 0.5;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 960px) {
   .header__nav {
     display: none;
   }

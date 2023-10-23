@@ -9,6 +9,14 @@ body {
   color: #121212;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+}
+
+a {
+  font-weight: inherit;
+}
+
 .body_fixed {
   overflow: hidden;
 }
