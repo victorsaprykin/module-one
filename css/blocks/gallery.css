@@ -54,6 +54,7 @@
   bottom: 60px;
   font-size: 30px;
   letter-spacing: -0.9px;
+  z-index: 9;
 }
 
 .gallery__slide-image {
